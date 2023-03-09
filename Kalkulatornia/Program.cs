@@ -1,4 +1,4 @@
-﻿string Menu = "MENU";
+﻿string Menu = "MENU Kalkulatora";
 string dodawanie = "Dodawanie - 1";
 string odejmowanie = "Odejmowanie - 2";
 string mnozenie = "Mnożenie - 3";
