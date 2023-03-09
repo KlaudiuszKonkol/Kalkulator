@@ -66,27 +66,25 @@ while (true)
 {
     menu();
     string input = Console.ReadLine();
-    if (input == "1")
+    switch (input)
     {
-        wyborJeden();
-    }
-    else if (input == "2")
-    {
-        wyborDwa();
-    }
-    else if (input == "3")
-    {
-        wyborTrzy();
-    }
-    else if (input == "4")
-    {
-        wyborCztery();
-    }
-    else if (input == "5")
-    {
-        break;
+        case "1":
+            wyborJeden();
+            break;
+        case "2":
+            wyborDwa();
+            break;
+        case "3":
+            wyborTrzy();
+            break;  
+        case "4":
+            wyborCztery();
+            break;
+        case "5":
+            goto exit_loop;
     }
     Console.WriteLine("Aby wrócić, naciśnij dowolny klawisz");
     Console.ReadLine();
     Console.Clear();
 }
+exit_loop:;
